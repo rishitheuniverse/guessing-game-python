@@ -1,0 +1,20 @@
+#simple guessing game
+n = 20
+number_of_guesses=1
+print("guessing game by rishi theuniverse:")
+print("number of guesses limits to 7 times only:")
+while (number_of_guesses<=7):
+    guess_number = int(input("guess the number :\n"))
+    if guess_number<20:
+        print("you guess too low.\n")
+    elif guess_number>20:
+        print("you guess too high.\n")
+    else:
+        print("you won\n")
+        print(number_of_guesses,"number of guesses he took to finish.")
+        break
+    print(7-number_of_guesses,"number of guesses left")
+    number_of_guesses = number_of_guesses + 1
+
+    if(number_of_guesses>7):
+            print("see you soon")
